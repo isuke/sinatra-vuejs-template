@@ -6,8 +6,19 @@
 
 ``` bash
 bundle install
-
 yarn
+```
 
-rackup
+## development
+
+```
+bundle exec rackup
+```
+
+## production
+
+```
+npm run build
+
+APP_ENV=production bundle exec rackup
 ```
