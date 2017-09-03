@@ -13,6 +13,7 @@ yarn
 
 ```
 bundle exec rackup
+npm run dev
 ```
 
 ## production

@@ -3,10 +3,6 @@ require "sinatra/reloader"
 
 class Server < Sinatra::Base
   configure :development do
-    pid = Process.spawn('npm', 'run', 'dev')
-    Process.detach(pid)
-    puts "webpack dev server pid: #{pid}"
-
     register Sinatra::Reloader
   end
 
