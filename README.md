@@ -4,7 +4,7 @@
 
 ## Build Setup
 
-``` bash
+```
 bundle install
 yarn
 ```
@@ -13,13 +13,13 @@ yarn
 
 ```
 bundle exec rackup
-npm run dev
+yarn run dev
 ```
 
 ## production
 
 ```
-npm run build
+yarn run build
 
 APP_ENV=production bundle exec rackup
 ```

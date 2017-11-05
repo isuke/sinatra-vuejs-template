@@ -7,8 +7,7 @@
 </template>
 
 <script lang="coffee">
-module.exports = {
-  name: 'bye'
+export default
   data: ->
     companies: []
   methods:
@@ -16,24 +15,17 @@ module.exports = {
       axios.get('/api/companies.json')
         .then (responce) =>
           @companies = responce.data
-}
 </script>
 
-<style lang="stylus">
-.bye {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style lang="stylus" scoped>
+.bye
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  text-align: center
+  margin-top: 60px
 
-  h1 {
-    font-weight: normal;
-  }
-
-  a {
-    color: #42b983;
-  }
-}
+  h1
+    font-weight: normal
+  a
+    color: #42b983
 </style>

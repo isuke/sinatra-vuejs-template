@@ -25,39 +25,30 @@
   router-link(:to="{ name: 'bye'}") Bye!
 </template>
 
-<script lang="coffee">
-module.exports = {
-  name: 'top'
+<script lang="coffee" scoped>
+export default
   data: ->
     msg: 'Welcome to Your Vue.js App'
-}
 </script>
 
 <style lang="stylus">
-.top {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.top
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  text-align: center
+  margin-top: 60px
 
-  h1, h2 {
-    font-weight: normal;
-  }
+  h1, h2
+    font-weight: normal
 
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
+  ul
+    list-style-type: none
+    padding: 0
 
-  li {
-    display: inline-block;
-    margin: 0 10px;
-  }
+  li
+    display: inline-block
+    margin: 0 10px
 
-  a {
-    color: #42b983;
-  }
-}
+  a
+    color: #42b983
 </style>
